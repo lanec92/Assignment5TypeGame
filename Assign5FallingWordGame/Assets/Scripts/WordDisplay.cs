@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class WordDisplay : MonoBehaviour
 {
     public Text text;
-    public float fallSpeed;
+    public static float fallSpeed = 50;
 
     public void SetWord(string word)
     {
@@ -38,5 +38,6 @@ public class WordDisplay : MonoBehaviour
     {
         Destroy(gameObject);
         NumTries.tries--;
+        SetWord(text.text);
     }
 }

@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2670200595808414893}
   m_Layer: 5
   m_Name: Word
-  m_TagString: Untagged
+  m_TagString: Word
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61,7 +61,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.69803923, g: 0.19607843, b: 0.09019608, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -95,7 +95,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 6662759902133090558}
-  fallSpeed: 150
 --- !u!61 &2104508014509540926
 BoxCollider2D:
   m_ObjectHideFlags: 0

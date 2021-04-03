@@ -10,7 +10,7 @@ public class WordGenerator : MonoBehaviour
 									"mug", "hot", "tart", "dangerous", "mother", "rustic", "economic",
 									"weird", "cut", "parallel", "wood", "encouraging", "interrupt",
 									"guide", "long", "chief", "mom", "signal", "rely", "abortive",
-									"hair", "representative", "earth", "grate", "proud", "feel",
+									"hair", "taco", "earth", "grate", "proud", "feel",
 									"hilarious", "addition", "silent", "play", "floor", "numerous",
 									"friend", "pizzas", "building", "organic", "past", "mute", "unusual",
 									"mellow", "analyse", "crate", "homely", "protest", "painstaking",

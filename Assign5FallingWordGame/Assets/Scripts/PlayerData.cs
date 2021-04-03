@@ -1,18 +1,17 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class PlayerData : MonoBehaviour
+[System.Serializable]
+public class PlayerData
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public int currScore;
+    public int currTries;
+    public float currSpeed;
 
-    // Update is called once per frame
-    void Update()
+    public PlayerData(GameManager gm)
     {
-        
+        currTries = NumTries.tries;
+        currScore = Score.score;
+        currSpeed = WordDisplay.fallSpeed;
+
     }
 }
