@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class WordDisplay : MonoBehaviour
 {
     public Text text;
-    public float fallSpeed = 1f;
+    public float fallSpeed;
 
     public void SetWord(string word)
     {
@@ -22,10 +22,21 @@ public class WordDisplay : MonoBehaviour
     public void RemoveWord()
     {
         Destroy(gameObject);
+        Score.score++;
+    }
+    public void AdjustSpeed(float newSpeed)
+    {
+        fallSpeed = newSpeed;
     }
 
     void Update()
     {
         transform.Translate(0f, -fallSpeed * Time.deltaTime, 0f);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Destroy(gameObject);
+        NumTries.tries--;
     }
 }
